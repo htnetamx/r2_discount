@@ -45,7 +45,7 @@ const setMySQL2 = {
 exports.AppConnections = new connections_1.DataBaseConnections();
 function appStart() {
     return __awaiter(this, void 0, void 0, function* () {
-        const app = new app_1.default(3004);
+        const app = new app_1.default(3010);
         const AppConnections = new connections_1.DataBaseConnections();
         AppConnections.addConnection(connection_1.ConnectionType.Mongoose, setMongoose.input, setMongoose.options);
         AppConnections.addConnection(connection_1.ConnectionType.MySQL2, setMySQL2.input, setMySQL2.options);
